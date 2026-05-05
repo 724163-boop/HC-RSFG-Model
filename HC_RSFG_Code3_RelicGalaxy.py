@@ -51,7 +51,7 @@ CAII_K = 3933.7
 
 # Bands for photometry
 BANDS_RELIC = ["sdss_g", "sdss_r", "sdss_i", "sdss_z",
-               "twomass_j", "twomass_h", "twomass_ks"]
+               "2mass_j", "2mass_h", "2mass_ks"]
 
 # -------------------------------------------------------------------
 # 2. FSPS instance builder
