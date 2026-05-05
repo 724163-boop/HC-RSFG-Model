@@ -23,7 +23,7 @@ TAU = 0.10              # Exponential decay SFH [Gyr]
 GAS_LOGU = -3.0         # Gas ionization parameter (Low ionization)
 
 # HC-RSFG Broken Power-Law IMF
-IMF_TYPE = 0            # BUG FIX: Must be 0 to use custom imf1, imf2, imf3
+IMF_TYPE = 2           
 IMF1 = 1.8              # Slope for 0.08-0.5 Msun
 IMF2 = 1.8              # Slope for 0.5-1.5 Msun
 IMF3 = 3.0              # Slope for >1.5 Msun (Strongly suppresses massive stars)
