@@ -1,91 +1,102 @@
 # HC-RSFG: Hierarchical Core Red Star-Forming Galaxy Theory
 
-**English | 日本語 | 中文**
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 This repository contains the numerical simulation codes for the **HC‑RSFG (Hierarchical Core Red Star‑Forming Galaxy)** theory.  
-This theory proposes that the extreme redness of galaxies — from the early Universe's Little Red Dots (LRDs) to present‑day relic galaxies — can be explained **entirely by pure stellar formation** with an extremely bottom‑heavy Initial Mass Function (IMF), **without requiring dust or an Active Galactic Nucleus (AGN)**.
-
-🌐 **Project Website & Interactive Visualizations**: *[URL to be added]*
-
----
-
-## 1. Project Overview | プロジェクト概要 | 项目概述
-
-### English
-The **HC‑RSFG theory** demonstrates that the red colours of JWST's Little Red Dots (LRDs) can be fully reproduced by pure star formation with an extremely bottom‑heavy IMF (few O/B/A stars), **without the need for dust extinction or AGN**.  
-The theory provides a unified physical scenario that connects all evolutionary stages of massive galaxy cores:
-- **Dark‑RSFG** (z≈10, currently undetected)
-- **Little Red Dots (LRDs)** (z≈5–7)
-- **Red Misfits** (z≈0.5)
-- **Relic Galaxies** (e.g., NGC 1277, z≈0)
-
-### 日本語
-**HC‑RSFG（段階的コア形成RSFG）理論**は、JWSTが発見したリトル・レッド・ドット（LRD）の赤い色を、ダストやAGNに頼らず、極端なボトムヘビーな初期質量関数（O型・B型・A型星がほとんど作られない）のみで説明するものです。  
-本理論は初期宇宙から現在に至る銀河の異常な赤みを説明可能とします。具体的には、**Dark‑RSFG**（z≈10, 未検出）、**LRD**（z≈5–7）、**Red Misfits**（z≈0.5）、そして現在の**レリック銀河**（NGC 1277）までを統一的に説明し、一貫した物理シナリオである可能性を論じます。
-
-### 中文
-**HC‑RSFG（分层核心红星星系形成）理论**表明，JWST观测到的小红点（LRD）的红色可以用纯星族合成来解释——其初始质量函数极度“底重”（缺乏大质量O/B/A星），**不需要尘埃消光或活动星系核**。  
-该理论统一描述了从早期宇宙到现在的星系核心演化，包括：**Dark‑RSFG**（z≈10，不可见）、**LRD**（z≈5–7）、**Red Misfits**（z≈0.5）和**遗迹星系**（例如 NGC 1277）。
+The theory explains the extreme redness of certain galaxies – from the early Universe’s Little Red Dots (LRDs) to local relic galaxies – **entirely through pure stellar formation** with an extremely bottom‑heavy Initial Mass Function (IMF).  
+No dust extinction or active galactic nucleus (AGN) is required.
 
 ---
 
-## 2. The Mystery of Little Red Dots & Existing Theories | LRDの謎と既存理論 | LRD的谜题与现有理论
+## 1. Theoretical Overview
 
-Shortly after JWST began operations, astronomers noticed something unexpected: red, compact objects dubbed **“Little Red Dots” (LRDs)** appearing in large numbers in the very early Universe. Their extreme redness has sparked intense debate:
+### The Puzzle of Red Galaxies
+JWST discovered numerous compact, very red objects – “Little Red Dots” (LRDs) – in the early Universe (z ≈ 5‑7).  
+Their colours are traditionally attributed to either heavy dust obscuration or an accreting supermassive black hole (AGN).  
+However, several observations contradict these explanations:
+- Some LRDs are X‑ray quiet and show only narrow emission lines.
+- Dust‑free LRDs have been reported at z > 7.
 
-- **AGN (Active Galactic Nucleus) hypothesis**: Explains strong emission lines, but many LRDs are “X‑ray quiet” and some lack broad lines.
-- **Dust‑obscured star formation hypothesis**: Explains the redness, but several LRDs show no dust at all (`Xiao et al. 2025`).
+This suggests a third possibility: **the stellar population itself may be intrinsically red**.
 
-**The HC‑RSFG theory proposes a third, standalone solution**: the stars themselves are red because **massive stars simply never form**.
+### The HC‑RSFG Solution
+At the earliest stages of galaxy formation (z ≈ 7.5), the central core of a protogalaxy reaches extreme gas densities (`n ≈ 10⁷ cm⁻³`) and very low temperatures.  
+Under these conditions, gas cools **~30 000 times faster than it collapses**, keeping the Jeans mass below ~1.5 M☉.  
+This shuts off the formation of O‑, B‑, and most A‑type stars, leading to a stellar population dominated by K‑ and M‑dwarfs.  
+Such stars are intrinsically red, giving the galaxy its red colour **from birth**.
+
+### A Unified but Flexible Evolutionary Picture
+The HC‑RSFG mechanism can act in different environments and epochs, naturally producing a variety of observed galaxy types.  
+One **possible** evolutionary sequence is:
+
+- **Early ultra‑faint stage (e.g., z ≈ 7‑10)**: extremely dim, currently undetected (“Dark‑RSFG”).
+- **Bright compact stage (e.g., z ≈ 5‑7)**: observed as narrow‑line Little Red Dots (LRDs).
+- **Intermediate stage (e.g., z ≈ 0.5)**: red but still star‑forming galaxies (Red Misfits).
+- **Final quiescent stage (z ≈ 0)**: massive relic ellipticals (e.g., NGC 1277) preserving a bottom‑heavy IMF.
+
+However, this is only one illustrative pathway; depending on gas supply, mergers, and AGN feedback, an HC‑RSFG core may evolve directly into a relic galaxy, become a Red Misfit without a prior LRD phase, or even be quenched and fade away.
 
 ---
 
-## 3. Theoretical Solution | 理論的解決策 | 理论解决方案
+## 2. Repository Contents
 
-### Core Hypothesis | 核心仮説 | 核心假说
-In the earliest stages of galaxy formation (z ≈ 7.5), the central core reaches extreme densities (`n ≈ 10⁷ cm⁻³`) and cools **30,000 times faster than it collapses**.  
-This keeps the Jeans mass below ~1.5 M⊙, preventing the formation of O-, B-, and most A‑type stars.  
-The resulting stellar population — dominated by K‑ and M‑dwarfs — is **intrinsically born red** without any dust.
+All codes are written in **Python 3** and require the **FSPS (Flexible Stellar Population Synthesis)** library.  
+They are designed to run in **Google Colab**.
 
-### An example of the course of evolution | 進化の流れの一例 | 演化序列
-| Phase | Redshift | Observable Counterpart | Status |
+| File | Description |
+|:---|:---|
+| `HC_RSFG_Code1_LRD.py` | Simulation of a compact red galaxy at z = 6 (similar to observed LRDs). Computes JWST broadband colours and emission‑line equivalent widths. |
+| `HC_RSFG_Code2_RedMisfit.py` | Two‑component (core + disk) model at z = 0.5; reproduces Red Misfit colours and Hα equivalent widths. |
+| `HC_RSFG_Code3_RelicGalaxy.py` | Relic galaxy simulation at z = 0.0173 (NGC 1277 analog). Radial profile of M/L ratio. |
+| `HC_RSFG_Code4_DarkRSFG.py` | Early, extremely faint stage (z ≈ 7‑10). Predicted colours and detectability. |
+| `HC_RSFG_Code5_AGN_Arrivel.py` | Timeline of black‑hole growth from a seed to a low‑mass AGN concurrently with the stellar core. |
+| `HC_RSFG_Code5_AGN_Point.py` | Energetic assessment: can the AGN expel the remaining core gas and quench star formation? |
+| `HC_RSFG_Metallicity_Mixing.py` | Quantitative mixing model that justifies the adopted metallicity (Z ≈ 0.1 Z☉) through Cold Stream enrichment. |
+| `HC_RSFG_Theory_Core.py` | Foundational calculation: cooling time vs. free‑fall time using [CII] 158 µm and [OI] 63 µm fine‑structure lines. |
+| `LICENSE` | MIT License. |
+
+---
+
+## 3. Quick Start (Google Colab)
+
+1. Open a new **Google Colab** notebook.
+2. Copy the entire content of any `.py` file into a cell.
+3. Run the cell. The first execution will:
+   - Clone the FSPS repository and compile the necessary Fortran modules.
+   - Set the `SPS_HOME` environment variable.
+   - Install the `fsps` Python wrapper.
+   - Perform the simulation and print the results.
+4. Output figures (if any) will be saved in the Colab runtime environment.
+
+**Note:** the first run may take several minutes because FSPS must compile its stellar population synthesis generators.
+
+---
+
+## 4. Key Numerical Results
+
+| Observable | HC‑RSFG Prediction | Observed Value | Reference |
 |:---|:---|:---|:---|
-| **Dark‑RSFG** | z ≈ 7–10 | — (extremely faint) | **Theoretically predicted** |
-| **LRD** | z ≈ 5–7 | Narrow‑line Little Red Dots | **Observed (JWST)** |
-| **Red Misfit** | z ≈ 0.5 | Star‑forming red galaxies | **Observed (SDSS)** |
-| **Relic Galaxy** | z ≈ 0 | NGC 1277, etc. | **Observed (Local)** |
+| F200W − F444W colour of a compact z = 6 galaxy | **+1.97 mag** (dust‑free) | > 1.0 mag | Hviding + 2025 |
+| Hα equivalent width (core) | < 1 Å | — (narrow lines only) | — |
+| u − r colour of a Red Misfit (z = 0.5) | **+3.55 mag** | > 2.22 mag | Evans + 2018 |
+| M/L ratio (NGC 1277 centre) | **1.56 × Kroupa** (lower limit) | ~2.0 × Kroupa | Martín‑Navarro + 2015 |
+
+> The M/L ratio is a conservative lower limit; increasing the IMF slope or core age brings it into exact agreement with the observed value.
 
 ---
 
-## 4. Repository Contents | リポジトリの内容 | 仓库内容
+## 5. License & Citation
 
-All simulation codes are written in **Python 3** and require the **FSPS** library. They are designed for **Google Colab**.
-
-| File | Description (EN) | 説明 (JP) | 说明 (ZH) |
-|------|----------------|-----------|-----------|
-| `HC_RSFG_Code1_LRD.py` | Phase 4: LRD state simulation (z=6, tage=0.9 Gyr) | Phase 4: LRD状態のシミュレーション | 阶段4：LRD态模拟 |
-| `HC_RSFG_Code2_RedMisfit.py` | Phase 5: Red Misfit simulation (z=0.5, two‑component model) | Phase 5: Red Misfit状態のシミュレーション | 阶段5：Red Misfit态模拟 |
-| `HC_RSFG_Code3_RelicGalaxy.py` | Phase 6: Relic galaxy simulation (NGC 1277 analog) | Phase 6: レリック銀河シミュレーション | 阶段6：遗迹星系模拟 |
-| `HC_RSFG_Code4_DarkRSFG.py` | Phase 2–3: Dark‑RSFG simulation (undetected stage) | Phase 2–3: Dark‑RSFGシミュレーション | 阶段2–3：Dark‑RSFG模拟 |
-| `hc_rsfg_hand_calculations.py` | Analytical verification (no FSPS needed) | 手計算による検証 | 手算验证 |
+This project is released under the **MIT License**.  
+If you use these codes or the HC‑RSFG theory in your research, please cite the forthcoming paper (arXiv link to be added) and this repository.
 
 ---
 
-## 5. Key Numerical Results | 主要数値結果 | 关键数值结果
+## 6. References
 
-| Observable | HC‑RSFG Prediction | Observation | Source |
-|:---|:---|:---|:---|
-| F200W−F444W (LRD) | **+1.97 mag** (dust‑free) | > 1.0 mag | Hviding+2025 |
-| EW(Hα) (LRD core) | < 1 Å | — (narrow lines only) | — |
-| u−r (Red Misfit) | **+3.55 mag** | > 2.22 mag | Evans+2018 |
-| M/L ratio (NGC 1277 centre) | **1.56 × Kroupa** (lower limit) | ~2.0 × Kroupa | Martín‑Navarro+2015 |
-
----
-
-## 6. Setup & Requirements | 環境構築と必要条件 | 环境配置与依赖
-
-```bash
-# Install required Python packages
-!pip install numpy fsps
-
-The codes require FSPS (Flexible Stellar Population Synthesis), which is automatically cloned and compiled in the Google Colab environment cells provided in each script.
+- Steinhardt (2025), *ApJ*, 982, 189 – original RSFG concept.
+- Hviding et al. (2025), *A&A*, 702, A57 – RUBIES survey of LRDs.
+- Labbé et al. (2023), *Nature*, 616, 266 – discovery of LRDs.
+- Evans et al. (2018), *MNRAS*, 476, 5284 – Red Misfits in SDSS.
+- Martín‑Navarro et al. (2015), *MNRAS*, 451, 1081 – NGC 1277 bottom‑heavy IMF.
+- Zhang et al. (2025), *ApJ*, 998, 123 – narrow‑line LRD spectroscopy.
