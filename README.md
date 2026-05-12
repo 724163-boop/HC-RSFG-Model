@@ -93,10 +93,10 @@ If you use these codes or the HC‑RSFG theory in your research, please cite the
 ---
 
 ## 6. References
-
 - Steinhardt (2025), *ApJ*, 982, 189 – original RSFG concept.
 - Hviding et al. (2025), *A&A*, 702, A57 – RUBIES survey of LRDs.
 - Labbé et al. (2023), *Nature*, 616, 266 – discovery of LRDs.
 - Evans et al. (2018), *MNRAS*, 476, 5284 – Red Misfits in SDSS.
 - Martín‑Navarro et al. (2015), *MNRAS*, 451, 1081 – NGC 1277 bottom‑heavy IMF.
 - Zhang et al. (2025), *ApJ*, 998, 123 – narrow‑line LRD spectroscopy.
+
