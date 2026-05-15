@@ -2,6 +2,12 @@
 # Phase 2-3: Early stage (z ~ 7.5-10, tage < 0.5 Gyr)
 # Predicts extremely faint objects – currently undetectable but may be found with future deep JWST surveys.
 
+
+# Version 1.0 (simplified top‑hat filter approximation)
+# Updated results using real FSPS filter transmission curves are available
+# in the accompanying paper (Fig. 1‑5) and in the script `HC_RSFG_5panel.py`.
+
+
 import fsps
 import numpy as np
 import matplotlib.pyplot as plt
