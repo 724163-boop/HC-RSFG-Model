@@ -4,6 +4,10 @@ Phase 4: HC-RSFG Full Activation Phase (z=6.0, tage=0.9 Gyr)
 Reference: Hviding et al. 2025 (RUBIES Survey), Labbe et al. 2023
 """
 
+# Version 1.0 (simplified top‑hat filter approximation)
+# Updated results using real FSPS filter transmission curves are available
+# in the accompanying paper (Fig. 1‑5) and in the script `HC_RSFG_5panel.py`.
+
 import numpy as np
 import warnings
 warnings.filterwarnings("ignore")
