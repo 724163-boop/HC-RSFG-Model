@@ -4,6 +4,12 @@ Phase 5 Transition (z ≈ 1-3, Universe Age 2-6 Gyr)
 Reference: Evans et al. (2018) - Discovery of Red Misfits
 """
 
+
+# Version 1.0 (simplified top‑hat filter approximation)
+# Updated results using real FSPS filter transmission curves are available
+# in the accompanying paper (Fig. 1‑5) and in the script `HC_RSFG_5panel.py`.
+
+
 import fsps
 import numpy as np
 import matplotlib.pyplot as plt
