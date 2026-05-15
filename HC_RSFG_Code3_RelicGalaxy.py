@@ -1,6 +1,12 @@
 # HC-RSFG Theory Code 3: Relic Galaxy Simulation
 # Phase 6: Final stage resembling NGC 1277
 
+
+# Version 1.0 (simplified top‑hat filter approximation)
+# Updated results using real FSPS filter transmission curves are available
+# in the accompanying paper (Fig. 1‑5) and in the script `HC_RSFG_5panel.py`.
+
+
 import fsps
 import numpy as np
 import matplotlib.pyplot as plt
