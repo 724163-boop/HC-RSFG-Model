@@ -89,9 +89,10 @@ They are designed to run in **Google Colab**.
 ---
 
 ## 5. License & Citation
+- **All source code** in this repository is released under the **MIT License** (see `LICENSE` file).
+- **The paper PDF** (located in `paper/`) is licensed under **CC BY 4.0** (see `paper/LICENSE` file).
 
-This project is released under the **MIT License**.  
-If you use these codes or the HC‑RSFG theory in your research, please cite the forthcoming paper (arXiv link to be added) and this repository.
+If you use these codes or the HC‑RSFG theory in your research, please cite the forthcoming paper and this repository.
 
 ---
 
