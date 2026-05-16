@@ -45,16 +45,19 @@ They are designed to run in **Google Colab**.
 
 | File | Description |
 |:---|:---|
-| `HC_RSFG_Code1_LRD.py` | Simulation of a compact red galaxy at z = 6 (similar to observed LRDs). Computes JWST broadband colours and emission‑line equivalent widths. |
-| `HC_RSFG_Code2_RedMisfit.py` | Two‑component (core + disk) model at z = 0.5; reproduces Red Misfit colours and Hα equivalent widths. |
-| `HC_RSFG_Code3_RelicGalaxy.py` | Relic galaxy simulation at z = 0.0173 (NGC 1277 analog). Radial profile of M/L ratio. |
-| `HC_RSFG_Code4_DarkRSFG.py` | Early, extremely faint stage (z ≈ 7‑10). Predicted colours and detectability. |
-| `HC_RSFG_Code5_AGN_Arrivel.py` | Timeline of black‑hole growth from a seed to a low‑mass AGN concurrently with the stellar core. |
+| `HC_RSFG_Code1_LRD.py` | Simulation of a compact red galaxy at z = 6 (similar to observed LRDs). Computes JWST broadband colours and emission‑line equivalent widths. |
+| `HC_RSFG_Code2_RedMisfit.py` | Two‑component (core + disk) model at z = 0.5; reproduces Red Misfit colours and Hα equivalent widths. |
+| `HC_RSFG_Code3_RelicGalaxy.py` | Relic galaxy simulation at z = 0.0173 (NGC 1277 analog). Radial profile of M/L ratio. |
+| `HC_RSFG_Code4_DarkRSFG.py` | Early, extremely faint stage (z ≈ 7–10). Predicted colours and detectability. |
+| `HC_RSFG_Code5_AGN_Arrival.py` | Timeline of black‑hole growth from a seed to a low‑mass AGN concurrently with the stellar core. |
 | `HC_RSFG_Code5_AGN_Point.py` | Energetic assessment: can the AGN expel the remaining core gas and quench star formation? |
-| `HC_RSFG_Metallicity_Mixing.py` | Quantitative mixing model that justifies the adopted metallicity (Z ≈ 0.1 Z☉) through Cold Stream enrichment. |
+| `HC_RSFG_Metallicity_Mixing.py` | Quantitative mixing model that justifies the adopted metallicity (Z ≈ 0.1 Z☉) through Cold Stream enrichment. |
 | `HC_RSFG_Theory_Core.py` | Foundational calculation: cooling time vs. free‑fall time using [CII] 158 µm and [OI] 63 µm fine‑structure lines. |
+| `HC_RSFG_TimeAxis_Integrity.py` | Gas accumulation simulation demonstrating that the critical density is reached within 220 Myr, consistent with the cosmic timeline. |
+| `HC_RSFG_FigureGenerator_v2.py` | Generates the 5‑panel comparison figure (LRD, relic, Red Misfit, Dark‑RSFG, M/L profile) using **real FSPS filter transmission curves**. |
+| `HC_RSFG_Relic_NGC1277_v2.py` | Relic galaxy simulation updated with real SDSS filter curves and a more extreme IMF model (imf3=4.0) to match NGC 1277 observations. |
+| `index.html` | Project website presenting the theory, simulation results, and interactive visualizations. |
 | `LICENSE` | MIT License. |
-
 ---
 
 ## 3. Quick Start (Google Colab)
