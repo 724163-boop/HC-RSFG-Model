@@ -1,3 +1,4 @@
+#The spectral diagram for output [3/5] Relic / NGC 1277 (z=0.0173) is generally correct, but there may be issues with the numerical values. In that case, please use code HC_RSFG_Relic / NGC 1277_v2.py
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.gridspec import GridSpec
