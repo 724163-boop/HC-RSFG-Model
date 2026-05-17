@@ -1,6 +1,7 @@
 # HC-RSFG: Hierarchical Core Red Star-Forming Galaxy Theory
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20249410.svg)](https://doi.org/10.5281/zenodo.20249410)
 
 This repository contains the numerical simulation codes for the **HC‑RSFG (Hierarchical Core Red Star‑Forming Galaxy)** theory.  
 The theory explains the extreme redness of certain galaxies – from the early Universe’s Little Red Dots (LRDs) to local relic galaxies – **entirely through pure stellar formation** with an extremely bottom‑heavy Initial Mass Function (IMF).  
